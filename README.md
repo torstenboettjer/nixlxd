@@ -1,4 +1,4 @@
-# Runnind Qemu images with lxd on NixOS
+# Run Qemu images with lxd on NixOS
 To run QEMU-based virtual machines in [LXD](https://linuxcontainers.org/lxd/) on a [NixOS](https://nixos.org/) host, your system needs hardware virtualization, OVMF UEFI firmware, and the qemu tools properly wired into your path. You can set this up declaratively using [NixOS Flakes](https://discuss.linuxcontainers.org/t/unable-to-create-a-vm-on-nixos/12314) or your base configuration.
 
 ## Enable LXD and QEMU on the Host
