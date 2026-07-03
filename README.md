@@ -52,6 +52,6 @@ lxc config set my-nix-vm limits.memory 4GB
 lxc start my-nix-vm
 ```
 
-## Important Notes for NixOS GuestsCloud-Init: 
-* The deployed image likely uses cloud-init to fetch a default password. Check your LXD console once the VM starts up.
-* Configuration Overlays: Do not copy the base configuration.nix when making tweaks to your virtual guest. Instead, create a new guest-specific configuration that defines only the packages or services you want to add on top of the base image.
+## Important Notes for NixOS Guests
+* **Cloud-Init:**  The deployed image likely uses cloud-init to fetch a default password. Check your LXD console once the VM starts up.
+* **Configuration Overlays:** Do not copy the base configuration.nix when making tweaks to your virtual guest. Instead, create a new guest-specific configuration that defines only the packages or services you want to add on top of the base image.
