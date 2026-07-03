@@ -28,7 +28,10 @@ Add the following options to your /etc/nixos/configuration.nix file to correctly
 Run `sudo nixos-rebuild switch` to apply the host configuration.
 
 ## Initialize LXD Networking
-LXD requires a bridge network to assign IPs to virtual machines. You can initialize this declaratively in your configuration or interactively by running the following command: `sudo lxd init`
+LXD requires a bridge network to assign IPs to virtual machines. You can initialize this declaratively in your configuration or interactively by running the following command: 
+```sh
+sudo lxd init
+```
 
 *Note: Accept the defaults for storage and networking unless you require custom bridge settings.*
 
